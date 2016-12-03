@@ -35,14 +35,16 @@ gulp.task('sass', function() {
 gulp.task('image', function() {
   gulp.src('src/images/*')
   .pipe(imagemin())
-  .pipe(gulp.dest('dist/images'));
+  .pipe(gulp.dest('dist/images'))
+  .pipe(browserSync.reload({stream:true}));
 });
 
 //HTML compression
 gulp.task('htmlmin', function() {
   gulp.src('src/*.html')
   .pipe(htmlmin({collapseWhitespace: true}))
-  .pipe(gulp.dest('dist'));
+  .pipe(gulp.dest('dist'))
+  .pipe(browserSync.reload({stream:true}));
 });
 
 //Gulp watch
@@ -50,7 +52,7 @@ gulp.task('watch', function() {
   var server = livereload();
   gulp.watch('src/script/*.js', ['js']);
   gulp.watch('src/scss/**/*.scss', ['sass']);
-  gulp.watch("src/*.html", ['bs-reload'])
+  gulp.watch("src/*.html", ['htmlmin'])
 });
 
 //Browser-sync
@@ -61,9 +63,7 @@ gulp.task('browser-sync', function() {
         }
     });
 });
-gulp.task('bs-reload', function () {
-    browserSync.reload();
-});
+
 
 
 //"One to rule them all"

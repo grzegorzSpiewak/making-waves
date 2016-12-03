@@ -1,0 +1,21 @@
+/*===== Header and mouse scrolling animation =====*/
+header {
+  background: url(../images/spinach_smothie.jpg) no-repeat;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  background-size: cover;
+  background-attachment: fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+}
+
+.header-info {
+  position: absolute;
+  bottom: 10%;
+  width: 100%;
+  left: 0;
+  right: 0;
+  margin-left: 0px;
+}

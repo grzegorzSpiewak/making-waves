@@ -1,0 +1,41 @@
+/* ===== Take care about yourself section ===== */
+#take-care {
+  background-color: $olive;
+  border-top: 5px solid $main-green;
+  border-bottom: 5px solid $main-green;
+}
+.image-wrapper {
+  width: 175px;
+  height: 175px;
+  margin: auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border: 5px solid $main-green;
+  box-shadow: 3px 4px 10px rgba(73, 160, 16, 1);
+  border-radius: 50%;
+  padding: 20px;
+
+  @media (min-width: $mobile) {
+    width: 250px;
+    height: 250px;
+    margin-top: 70px;
+    margin-bottom: 20px;
+    padding: 30px;
+  }
+}
+
+.green-line {
+  background-color: $main-green;
+  height: 5px;
+  width: 80%;
+  margin: auto;
+  margin-top: 5px;
+  margin-bottom: 20px;
+  box-shadow: 3px 4px 10px rgba(73, 160, 16, 1);
+  border-radius: 5px;
+
+  @media (min-width: $mobile) {
+    margin-top: 50px;
+    margin-bottom: 70px;
+  }
+}

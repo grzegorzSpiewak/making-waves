@@ -1,0 +1,88 @@
+/* ===== General styles ===== */
+body {
+  margin: 0px;
+  padding: 0px;
+  font-family: 'Amatic SC', cursive;
+}
+
+/* ===== Headers and paragraphs ===== */
+%font {
+  line-height: 1.2em;
+  letter-spacing: 2px;
+  font-weight: bolder;
+  margin: 0px;
+}
+h1 {
+  font-size: 5em;
+  @extend %font;
+}
+
+h2 {
+  @extend %font;
+
+  @media (min-width: $mobile) {
+    font-size: 3em;
+  }
+}
+
+h3 {
+  font-size: 3em;
+  @extend %font;
+}
+
+p {
+  font-size: 1.8em;
+  @extend %font;
+}
+
+h4 {
+  font-size: 1em;
+  @extend %font;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+/* ===== Color and style for fonts ===== */
+
+.orange {
+  color: $main-orange;
+}
+
+.green {
+  color: $main-green;
+}
+
+.pink {
+  color: $main-pink;
+}
+
+.green-shadow {
+  text-shadow: 3px 4px 10px rgba(73, 160, 16, 1);
+}
+
+.pink-shadow {
+  text-shadow: 3px 4px 10px rgba(200, 88, 86, 1);
+}
+
+/* ===== Buttons ===== */
+
+.btn-primary {
+  background-color: $main-pink;
+  cursor:pointer;
+  border: 0px;
+  font-size: 1.8em;
+  padding: 5px 30px 5px 30px;
+  box-shadow: 0px 10px 14px -7px $main-pink;
+  margin-bottom: 30px;
+
+  &:hover {
+    background-color: $main-white;
+    color: $main-pink;
+  }
+
+  &:focus, &:active:focus, &.active:focus {
+    outline: none;
+    background-color: $main-white;
+    color: $main-pink;
+  }
+}

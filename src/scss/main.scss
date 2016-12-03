@@ -6,14 +6,19 @@
 //----------------------------------*\
 // CONFIG MODULES
 //----------------------------------*/
-
-// Config modules
 @import 'modules/_normalize.scss';
+@import 'modules/_variables.scss';
 //----------------------------------*\
 // PARTIALS
 //----------------------------------*/
-
-@import 'partials/_test.scss';
+@import 'partials/_main.scss';
+@import 'partials/_header.scss';
+@import 'partials/_mouseIcon.scss';
+@import 'partials/_jumbotron.scss';
+@import 'partials/_takeCare.scss';
+@import 'partials/_parallax.scss';
+@import 'partials/_contact.scss';
+@import 'partials/_footer.scss';
 
 
 

@@ -1,0 +1,25 @@
+/* ===== Footer ===== */
+footer {
+  border-top: 5px solid $main-pink;
+
+  a {
+    text-decoration: none;
+    color: $main-pink;
+  }
+}
+.social {
+  margin-top: 5px solid $main-pink;
+  padding-top: 10px;
+
+  .fa {
+    color: $main-pink;
+  }
+}
+
+.sign {
+  display: none;
+
+  @media (min-width: $mobile) {
+    display: block;
+  }
+}
