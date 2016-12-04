@@ -11,7 +11,7 @@ var gulp = require('gulp'),
 
 //JS compression
 gulp.task('js', function () {
-  gulp.src('src/script/main.js')
+  gulp.src('src/script/*.js')
   .pipe(plumber())
   .pipe(browserify({
     insertGlobals : true,
@@ -50,7 +50,7 @@ gulp.task('htmlmin', function() {
 //Gulp watch
 gulp.task('watch', function() {
   var server = livereload();
-  gulp.watch('src/script/*.js', ['js']);
+  gulp.watch('src/script/**/*.js', ['js']);
   gulp.watch('src/scss/**/*.scss', ['sass']);
   gulp.watch("src/*.html", ['htmlmin'])
 });
@@ -63,8 +63,6 @@ gulp.task('browser-sync', function() {
         }
     });
 });
-
-
 
 //"One to rule them all"
 gulp.task('default', ['htmlmin', 'sass', 'js', 'image', 'watch', 'browser-sync']);
