@@ -9,16 +9,16 @@ B. Installing project instructions:
 
    1. You need to have node.js and npm installed on your working station
    2. Clone rispository link from github
-   3. Open Git Bash or Console and clone link on your desktop (git clone comand)
-   4. Enter folder in Console (cd 'folder name')
+   3. Open Git Bash or console and clone link on your desktop (git clone comand)
+   4. Enter folder in console (cd 'folder name')
    5. Type 'npm install' or 'npm i' to set up environment
-   6. When installation is over type GULP in console and whait few secound to lounch a project.
+   6. When installation is over type GULP in console and wait few seconds to lounch a project.
 
 C. Desription of my approach
 
 When approaching this project I focused on main goal of this task which is building potential clients email base. Thats why I decided to reduce all interaction which user can experience when visiting page to only one button and email form (build a landing page). The purpose of this action is to not distract him by other options (navigation, animations, sliders etc.) and increase to amount of potential clients.
 
-I decided to use simple graphics to show the benefits which are being gain by drinking smoothie - to not "attack" user with tons of informations which can distract or bore users. The section which reflect directly to user ("Think about yourself...") are added to keep them interested and make them keep "scrolling down" :)
+I decided to use simple graphics to show the benefits which are being gain by drinking smoothie - to not "attack" user with tons of informations which can distract or bore users. The section which reflect directly to user ("Think about yourself...") are added to keep them interested and make them keep "scrolling down".
 
 SEO accesibility:
 
